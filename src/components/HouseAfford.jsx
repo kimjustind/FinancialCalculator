@@ -28,7 +28,7 @@ const HouseAfford = () => {
 
     return (
         <div>
-            <h1>Compound Interest Calculator</h1>
+            <h1>Affordable Home Payments</h1>
             <input type="number" value={principal} onChange={handlePrincipalChange} placeholder="Principal" />
             <input type="number" value={rate} onChange={handleRateChange} placeholder="Rate of Interest" />
             <input type="number" value={time} onChange={handleTimeChange} placeholder="Time (in years)" />

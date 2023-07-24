@@ -25,7 +25,7 @@ function App() {
       <nav>
         <ul>
           {routes.map((route) => (
-            <li class="btn btn-link"key={route.path}>
+            <li className="btn btn-link"key={route.path}>
               <Link to={route.path}>{route.name}</Link>
             </li>
           ))}

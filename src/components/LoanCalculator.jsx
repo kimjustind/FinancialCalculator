@@ -15,7 +15,6 @@ const LoanCalculator = () => {
         });
     };
 
-    // Add your calculation function here
     function CalculateInterest() {
         const interest = userValues.interest * 0.01;
         if (interest === 0) {
@@ -24,6 +23,7 @@ const LoanCalculator = () => {
             return ( (interest/12 * userValues.amount) / (1 - (Math.pow((1 + interest/12), -userValues.years * 12))) );
         }
     }
+
     function Total() {
         return (CalculateInterest() * 12 * userValues.years).toFixed(2);
     }
@@ -31,7 +31,8 @@ const LoanCalculator = () => {
     return (
         <div>
             <form>
-                <label>Principle:</label>
+                <h1>Loan Calculator</h1>
+                <label>Principal:</label>
                 <input
                     type='number'
                     name='amount'
